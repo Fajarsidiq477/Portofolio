@@ -27,13 +27,17 @@ module.exports = {
     liveReload: true,
   },
   plugins: [
-    // new HtmlWebpackPlugin({
-    //   filename: 'home.html',
-    //   template: './src/template/home.html',
-    // }),
     new HtmlWebpackPlugin({
-      //   filename: 'index.html',
+      filename: 'home.html',
+      template: './src/template/home.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'blog.html',
       template: './src/template/blog.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'login.html',
+      template: './src/template/login.html',
     }),
     new MiniCssExtractPlugin(),
   ],

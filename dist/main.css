@@ -11862,6 +11862,10 @@ body {
   background-color: rgb(25, 25, 25);
 }
 
+.bg-crimson {
+  background-color: crimson;
+}
+
 .navbar {
   box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -11938,7 +11942,34 @@ main .introducing-text p {
 main section {
   min-height: 95vh;
 }
+main .my-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+@media screen and (max-width: 768px) {
+  main .my-grid {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .my-grid {
+    grid-template-columns: auto;
+  }
+}
 
+.card-date {
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-date {
+    font-size: 0.8rem;
+  }
+}
 .carousel-cell {
   width: 32%; /* half-width */
   height: auto;

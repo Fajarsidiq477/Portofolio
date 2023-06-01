@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- Slider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg" style="top: -2px">
+      <div class="container">
+        <a class="navbar-brand" href="#"><span>Fajar</span>Bercerita</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggler"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-contact">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="mt-5 position-realtive" style="min-height: 82vh">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div
+              class="col-12 col-md-6 col-lg-5 position-absolute"
+              style="top: 15%"
+            >
+              <div class="card bg-dark text-light p-3">
+                <h2 class="text-center m-0 p-2">Login</h2>
+                <form>
+                  <div class="card-body">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label"
+                        >Email address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                      />
+                      <!-- <div id="emailHelp" class="form-text">
+                        We'll never share your email with anyone else.
+                      </div> -->
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="exampleInputPassword1"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-footer d-grid">
+                    <button type="submit" class="btn d-block btn-primary">
+                      Login
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark py-4 text-light">
+      <p class="m-0 text-center">Copyright &copy; 2023 by Fajar</p>
+    </footer>
+  </body>
+</html>

@@ -2,7 +2,6 @@
 
 $bp-mobile: 425px;
 $bp-tab: 768px;
-$enable-cssgrid: true;
 
 .btn-crimson {
   background-color: crimson;
@@ -11,6 +10,10 @@ $enable-cssgrid: true;
 
 body {
   background-color: rgb(25, 25, 25);
+}
+
+.bg-crimson {
+  background-color: crimson;
 }
 
 .navbar {
@@ -111,6 +114,37 @@ main {
 
   section {
     min-height: 95vh;
+  }
+
+  .my-grid {
+    display: grid;
+
+    grid-template-columns: auto auto auto;
+  }
+
+  @media screen and (max-width: $bp-tab) {
+    .my-grid {
+      grid-template-columns: auto auto;
+    }
+  }
+  @media screen and (max-width: $bp-mobile) {
+    .my-grid {
+      grid-template-columns: auto;
+    }
+  }
+}
+
+.card-date {
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+@media screen and (max-width: $bp-tab) {
+  .card-date {
+    font-size: 0.8rem;
   }
 }
 
