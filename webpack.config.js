@@ -36,8 +36,21 @@ module.exports = {
       template: './src/template/blog.html',
     }),
     new HtmlWebpackPlugin({
-      filename: 'login.html',
-      template: './src/template/login.html',
+      filename: 'admin/login.html',
+      template: './src/template/admin/login.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'admin/posts.html',
+      template: './src/template/admin/posts.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'admin/dashboard.html',
+      template: './src/template/admin/dashboard.html',
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: 'admin/home.html',
+      template: './src/template/admin/home.html',
     }),
     new MiniCssExtractPlugin(),
   ],

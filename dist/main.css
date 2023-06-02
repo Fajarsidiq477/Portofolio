@@ -11997,3 +11997,27 @@ main .my-grid {
     margin-right: 10px;
   }
 }
+main .sidebar-admin {
+  width: 280px;
+  position: fixed;
+  top: 50px;
+  left: -280px;
+  bottom: 50px;
+  z-index: 2;
+  transition: all 0.3s;
+}
+main .sidebar-admin.show {
+  left: 0px;
+}
+main .sidebar-admin .btn-sidebar {
+  outline: none;
+  border: none;
+}
+@media screen and (min-width: 1024px) {
+  main .main-with-sidebar {
+    transition: 0.3s;
+  }
+  main .main-with-sidebar.sidebar-opened {
+    margin-left: 280px;
+  }
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- Slider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <!-- Box Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- or -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  <script defer src="../main.js"></script><link href="../main.css" rel="stylesheet"></head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg" style="top: -2px">
+      <div class="container">
+        <a class="navbar-brand" href="#"><span>Fajar</span>Bercerita</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggler"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-contact">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="position-relative">
+      <aside
+        class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark sidebar-admin"
+      >
+        <button
+          class="badge position-absolute bg-crimson text-light py-1 px-2 btn-sidebar"
+          style="right: -35px"
+        >
+          <i class="fs-2 bx bx-menu mr-3"></i>
+        </button>
+        <h2 class="fs-4 text-center mt-4">Admin Dashboard</h2>
+        <hr />
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">
+              <i class="bx bxs-home mr-3"></i> <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <i class="bx bxs-dashboard mr-3"></i> <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <i class="bx bxs-grid mr-3"></i> <span>Posts</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div class="my-5 main-with-sidebar" style="min-height: 75vh">
+        <div class="container pt-3">
+          <div class="card mt-5 bg-dark text-light">
+            <div class="card-header">
+              <h2>Posts</h2>
+            </div>
+            <div class="card-body">
+              <a
+                href="#"
+                class="badge bg-success"
+                style="text-decoration: none"
+              >
+                <span>Add a post</span>
+                <i class="bx bx-plus"></i>
+              </a>
+              <div class="table-responsive">
+                <table class="table table-bordered text-light mt-3">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Title</th>
+                      <th>Category</th>
+                      <th>Body</th>
+                      <th>Thumbnail</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          href="#"
+                          class="badge bg-warning"
+                          style="text-decoration: none"
+                        >
+                          <i class="bx bx-pencil"></i>
+                        </a>
+                        <a
+                          href="#"
+                          class="badge bg-danger"
+                          style="text-decoration: none"
+                          onclick="deleteData(1)"
+                        >
+                          <i class="bx bx-trash"></i>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark py-4 text-light">
+      <p class="m-0 text-center">Copyright &copy; 2023 by Fajar</p>
+    </footer>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+      const deleteData = (id) => {
+        swal({
+          title: 'Hapus data ini?',
+          text: 'Setelah data dihapus, kamu tidak akan bisa mengembalikan data!',
+          icon: 'warning',
+          buttons: true,
+          dangerMode: true,
+        }).then((willDelete) => {
+          if (willDelete) {
+            swal('Data berhasil dihapus!', {
+              icon: 'success',
+            });
+          } else {
+            swal('Data aman!');
+          }
+        });
+      };
+    </script>
+  </body>
+</html>

@@ -2,6 +2,7 @@
 
 $bp-mobile: 425px;
 $bp-tab: 768px;
+$bp-laptop: 1024px;
 
 .btn-crimson {
   background-color: crimson;
@@ -176,5 +177,35 @@ main {
     width: 95%; /* half-width */
     height: auto;
     margin-right: 10px;
+  }
+}
+
+// Admin
+main {
+  .sidebar-admin {
+    width: 280px;
+    position: fixed;
+    top: 50px;
+    left: -280px;
+    bottom: 50px;
+    z-index: 2;
+    transition: all 0.3s;
+    &.show {
+      left: 0px;
+    }
+
+    .btn-sidebar {
+      outline: none;
+      border: none;
+    }
+  }
+
+  .main-with-sidebar {
+    @media screen and (min-width: $bp-laptop) {
+      transition: 0.3s;
+      &.sidebar-opened {
+        margin-left: 280px;
+      }
+    }
   }
 }

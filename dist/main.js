@@ -636,7 +636,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n\n\n\n\n//# sourceURL=webpack://my-webpack-project/./src/scripts/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n\n\n\nconst sidebar = document.querySelector('.sidebar-admin');\nconst toggleSidebar = document.querySelector('.btn-sidebar');\nconst content = document.querySelector('.main-with-sidebar');\n\ntoggleSidebar.addEventListener('click', () => {\n  sidebar.classList.toggle('show');\n  content.classList.toggle('sidebar-opened');\n});\n\n\n//# sourceURL=webpack://my-webpack-project/./src/scripts/index.js?");
 
 /***/ })
 
