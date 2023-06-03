@@ -44,6 +44,10 @@ module.exports = {
       template: './src/template/admin/posts.html',
     }),
     new HtmlWebpackPlugin({
+      filename: 'admin/post-add.html',
+      template: './src/template/admin/post-add.html',
+    }),
+    new HtmlWebpackPlugin({
       filename: 'admin/dashboard.html',
       template: './src/template/admin/dashboard.html',
     }),

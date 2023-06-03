@@ -12021,3 +12021,23 @@ main .sidebar-admin .btn-sidebar {
     margin-left: 280px;
   }
 }
+
+.input-custom {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: 100%;
+}
+.input-custom:focus {
+  outline: none;
+}
+
+.ck-content {
+  min-height: 10rem;
+}
